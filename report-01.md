@@ -61,6 +61,7 @@ The prototype was presented to the client, who provided the following suggestion
 - Incorporate customer feedback.
 - Refine the user interface.
 - Present the revised prototype for review.
+- account for dynamically changing prices (point made during lecture)
 
 ## TQM Application
 
