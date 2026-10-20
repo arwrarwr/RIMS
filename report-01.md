@@ -49,25 +49,30 @@ Customers either pay immediately or settle their dues at the end of the month. T
   </tr>
 </table>
 
+<div align ="center" > 
+<br>
+
+  
 ## Customer Feedback
 
 The prototype was presented to the client, who provided the following suggestions.
 
-- **Return sales:** Add functionality for returned products.
-- **Supplier dashboard:** Improve it to match the client's existing software requirements.
+ **Return sales:** Add functionality for returned products. <br>
+ **Supplier dashboard:** Improve it to match the client's existing software requirements.
 
 ## Next Iteration
 
-- Incorporate customer feedback.
-- Refine the user interface.
-- Present the revised prototype for review.
-- account for dynamically changing prices (point made during lecture)
+  Incorporate customer feedback.<br>
+  Refine the user interface. <br>
+  Present the revised prototype for review. <br>
+  account for dynamically changing prices (point made during lecture)
 
-## TQM Application
+
+  <h2> TQM Application </h2>
 
 | Principle | Implementation |
 |---|---|
 | Customer focus | Direct client feedback |
 | Continuous improvement | Iterative prototype revisions |
 | Process approach | Familiar bookkeeping workflow |
-
+</div>
