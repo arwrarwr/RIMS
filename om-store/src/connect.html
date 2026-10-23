@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Connect</title>
+    <style>
+        body {
+            font: 15px system-ui;
+            background: #16131f;
+            color: #f0d9e4;
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            margin: 0
+        }
+
+        form {
+            background: #211b2a;
+            padding: 28px;
+            border-radius: 14px;
+            width: 420px;
+            display: grid;
+            gap: 12px
+        }
+
+        input,
+        button {
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #806c79;
+            font: inherit
+        }
+
+        button {
+            background: #f0d9e4;
+            color: #16131f;
+            cursor: pointer;
+            font-weight: 600
+        }
+
+        .g {
+            background: none;
+            color: #c1a0ac
+        }
+    </style>
+</head>
+
+<body>
+    <form onsubmit="go(event)">
+        <h2 style="margin:0">Connect to OM Store</h2>
+        <p style="margin:0;color:#c1a0ac">Enter the address of your OM Store server, e.g. http://192.168.1.20:3000 or
+            https://store.example.com</p>
+        <input id="u" placeholder="http://..." required><button>Connect</button><button type="button" class="g"
+            onclick="solo()">Work on this computer only (no sharing)</button>
+    </form>
+    <script>async function go(e) { e.preventDefault(); let u = document.getElementById('u').value.trim().replace(/\/$/, ''); await omCfg.set({ serverUrl: u }); location.href = u }
+        async function solo() { await omCfg.set({ local: true }); location.href = 'index.html' }</script>
+</body>
+
+</html>

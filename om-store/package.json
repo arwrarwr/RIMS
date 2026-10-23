@@ -1,0 +1,14 @@
+{
+  "name": "om-store",
+  "version": "1.0.0",
+  "description": "OM Store – retail, dues and returns manager",
+  "main": "main.js",
+  "scripts": { "start": "electron .", "dist": "electron-builder", "server": "node server/server.js" },
+  "devDependencies": { "electron": "^44.4.5", "electron-builder": "^26.0.12" },
+  "build": {
+    "appId": "com.omstore.manager",
+    "productName": "OM Store",
+    "files": ["main.js", "preload.js", "src/**", "server/**", "build/icon.png"],
+    "win": { "target": "nsis" }, "mac": { "target": "dmg" }, "linux": { "target": "AppImage" }
+  }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>OM Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="app">
+        <aside>
+            <div class="brand">
+                <h1>OM Store</h1><small>Retail manager</small>
+            </div>
+            <nav id="nav"></nav>
+            <div class="owner"><b>Satya Narayan Gupta</b><small>Proprietor</small><small id="me"></small><small
+                    id="sync"></small><button id="logout" style="display:none">Sign out</button><button id="reset">Erase
+                    all data</button></div>
+        </aside>
+        <section class="body">
+            <div class="top">
+                <h2 id="title"></h2><span id="today"></span>
+            </div>
+            <main id="app"></main>
+        </section>
+    </div>
+    <div id="print"></div>
+    <div class="modal" id="login"></div>
+    <div class="modal" id="modal">
+        <div class="sheet" id="sheet"></div>
+    </div>
+    <div class="toast" id="toast"></div>
+    <script src="app.js"></script>
+</body>
+
+</html>
